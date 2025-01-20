@@ -28,7 +28,7 @@
 
    - **Inline CSS**:
      - Deklarácie štýlov sú priamo v HTML elemente pomocou atribútu style.
-     - Napr.: ```html <p style="color: red; font-size: 16px;">Text</p>```
+     - Napr.: ```<p style="color: red; font-size: 16px;">Text</p>```
      - Výhodou je, že štýl sa uplatní iba na konkrétny prvok. Nevýhodou je neprehľadnosť a horšia udržiavateľnosť kódu.
 
    - **Internal (vložené) CSS**:
@@ -49,9 +49,11 @@
    - **External (externé) CSS**:
      - Používa sa samostatný súbor (napr. styles.css), ktorý sa linkuje v hlavičke HTML súboru.
      - Napr.:
-       <head>
+      ```html
+        <head>
          <link rel="stylesheet" href="styles.css">
        </head>
+       ```
      - Výhodou je jednoduchšia údržba štýlov pre celý web a rýchlejšie načítavanie (keďže prehliadač môže stylesheet cacheovať). Je to považované za najlepšie riešenie vo väčšine prípadov.
 
    - **Prečo použiť external CSS**:
