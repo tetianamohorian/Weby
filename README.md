@@ -1,3 +1,4 @@
+###Variant B
 1. VÝZNAM SEMANTICKÉHO HTML
 
    Semantické HTML je spôsob písania HTML kódu, pri ktorom používame také značky (tagy), ktoré opisujú význam obsahu (napr. ```<header>, <nav>, <main>, <article>, <section>, <footer>``` a pod.). Tieto značky pomáhajú prehľadnosti kódu, lepšej prístupnosti pre čítačky obrazovky a efektívnejšiemu indexovaniu stránok vyhľadávačmi.
@@ -151,4 +152,8 @@
      - V tomto príklade máme funkcionálny komponent *HelloWorld*, ktorý prijíma *props* (vlastnosti).
      - Komponent *App* využíva viac inštancií (komponentov) *HelloWorld* a tým demonštruje opakované použitie.
      - Po preložení (pomocou nástrojov ako Vite, Create React App či Webpack) sa aplikácia zobrazí v prehliadači.
+
+
+###Variant A
+
 
