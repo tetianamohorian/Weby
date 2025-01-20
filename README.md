@@ -90,7 +90,12 @@
      2. Potom pomocou media queries upravujeme rozloženie pre rôzne šírky obrazovky (breakpointy).
      3. Zabezpečíme, aby dôležité prvky boli čitateľné a použiteľné na všetkých zariadeniach.
 
-5. ROZDIEL MEDZI document.querySelector() A document.querySelectorAll()
+5. ROZDIEL MEDZI document.querySelector(), document.getElementById(), document.querySelectorAll()
+   
+   - ```document``` - Predstavuje celý dokument webovej stránky načítanej v prehliadači. Pomocou neho môžeme manipulovať s obsahom stránky, čítať údaje alebo ich upravovať.
+   - ```.``` - Bodka slúži na prístup k vlastnostiam alebo metódam objektu. V tomto prípade sa používa na zavolanie metódy querySelector objektu document.
+   - ```querySelector``` - Metóda objektu document, ktorá vyhľadáva prvý element na stránke, ktorý zodpovedá zadanému CSS selektoru. Ak takýto element neexistuje, metóda vráti null.
+
 
    - **document.querySelector(selektor)**:
      - Vráti prvý element v dokumente, ktorý zodpovedá zadanému CSS selektoru.
@@ -113,7 +118,7 @@
      2. querySelectorAll() – ak potrebuješ získať a upraviť viac prvkov naraz (napr. pridanie triedy všetkým prvkom).
      3. getElementById() – ak je na stránke element s jedinečným ID a potrebujete ho rýchlo získať.
 
-6. HLAVNÉ VÝHODY REACTU A ZÁKLADNÝ PRÍKLAD KOMPONENTU
+7. HLAVNÉ VÝHODY REACTU A ZÁKLADNÝ PRÍKLAD KOMPONENTU
 
    - **Hlavné výhody použitia Reactu**:
      1. **Komponentovo orientovaná architektúra**: Aplikácia je rozdelená na menšie, znovupoužiteľné časti (komponenty).
