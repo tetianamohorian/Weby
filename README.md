@@ -1,5 +1,5 @@
 # Webové technológie – Odpovede na otázky (Skupina B)
-1. VÝZNAM SEMANTICKÉHO HTML
+## 1. VÝZNAM SEMANTICKÉHO HTML
 
    Semantické HTML je spôsob písania HTML kódu, pri ktorom používame také značky (tagy), ktoré opisujú význam obsahu (napr. ```<header>, <nav>, <main>, <article>, <section>, <footer>``` a pod.). Tieto značky pomáhajú prehľadnosti kódu, lepšej prístupnosti pre čítačky obrazovky a efektívnejšiemu indexovaniu stránok vyhľadávačmi.
 
@@ -25,7 +25,7 @@
      3. **Lepšia udržiavateľnosť kódu**: Kód je prehľadnejší, a tak sa jednoduchšie rozvíja a upravuje.
      4. **Štandardy a budúca rozšíriteľnosť**: Použitie moderných značiek zvyšuje šancu, že kód bude kompatibilný aj s budúcimi technológiami.
 
-3. ROZDIELY MEDZI INLINE, INTERNAL A EXTERNAL CSS
+## 2. ROZDIELY MEDZI INLINE, INTERNAL A EXTERNAL CSS
 
    - **Inline CSS**:
      - Deklarácie štýlov sú priamo v HTML elemente pomocou atribútu style.
@@ -63,7 +63,7 @@
      3. **Jednoduchá údržba**: Zmena v jednom CSS súbore sa prejaví na všetkých stránkach.
      4. **Rýchlosť načítania**: Prehliadač si štýlový súbor môže stiahnuť a uložiť do vyrovnávacej pamäte (cache).
 
-4. ČO SÚ MEDIA QUERIES A AKO ZABEZPEČIŤ RESPONSIVITU
+## 3. ČO SÚ MEDIA QUERIES A AKO ZABEZPEČIŤ RESPONSIVITU
 
    **Media queries** v CSS umožňujú aplikovať rôzne štýly v závislosti od vlastností zariadenia (napr. šírka obrazovky). Používajú sa pre responzívny dizajn, aby stránka vyzerala dobre na mobiloch, tabletoch, notebookoch či veľkých monitoroch.
 
@@ -91,7 +91,7 @@
      2. Potom pomocou media queries upravujeme rozloženie pre rôzne šírky obrazovky (breakpointy).
      3. Zabezpečíme, aby dôležité prvky boli čitateľné a použiteľné na všetkých zariadeniach.
 
-5. ROZDIEL MEDZI document.querySelector(), document.getElementById(), document.querySelectorAll()
+## 4. ROZDIEL MEDZI document.querySelector(), document.getElementById(), document.querySelectorAll()
    
    - ```document``` - Predstavuje celý dokument webovej stránky načítanej v prehliadači. Pomocou neho môžeme manipulovať s obsahom stránky, čítať údaje alebo ich upravovať.
    - ```.``` - Bodka slúži na prístup k vlastnostiam alebo metódam objektu. V tomto prípade sa používa na zavolanie metódy querySelector objektu document.
@@ -119,7 +119,7 @@
      2. querySelectorAll() – ak potrebuješ získať a upraviť viac prvkov naraz (napr. pridanie triedy všetkým prvkom).
      3. getElementById() – ak je na stránke element s jedinečným ID a potrebujete ho rýchlo získať.
 
-7. HLAVNÉ VÝHODY REACTU A ZÁKLADNÝ PRÍKLAD KOMPONENTU
+## 5. HLAVNÉ VÝHODY REACTU A ZÁKLADNÝ PRÍKLAD KOMPONENTU
 
    - **Hlavné výhody použitia Reactu**:
      1. **Komponentovo orientovaná architektúra**: Aplikácia je rozdelená na menšie, znovupoužiteľné časti (komponenty).
