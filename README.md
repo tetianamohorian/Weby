@@ -34,6 +34,7 @@
    - **Internal (vložené) CSS**:
      - Definuje sa v hlavičke stránky v rámci značky <style>.
      - Napr.:
+     ```html
        <head>
          <style>
            p {
@@ -42,6 +43,7 @@
            }
          </style>
        </head>
+     ```
      - Výhodou je, že všetky štýly sú na jednej stránke. Nevýhodou je, že sa štýly dajú použiť len na danú stránku a pri viacerých stránkach je to menej efektívne.
 
    - **External (externé) CSS**:
