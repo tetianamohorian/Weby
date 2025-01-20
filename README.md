@@ -11,13 +11,20 @@
      - ```html<aside>``` – vedľajší obsah, napríklad sidebar
      - ```html<footer>``` – pätička sekcie alebo celej stránky
 
+   - Príklady semantických značiek:
+     - ```html<div>``` – univerzálny blokový kontajner (bez špecifického významu)
+     - ```html<span>``` – univerzálny riadkový kontajner (takisto bez špecifického významu)
+     - ```html<b>``` – pôvodne na zvýraznenie tučným písmom (bez definície, prečo je text dôležitý)
+     - ```html<i>``` – pôvodne na zobrazenie textu kurzívou (opäť bez sémantického vysvetlenia)
+     - ```html<u>``` – podčiarknutie textu
+
    - Prečo je dôležité semantické HTML:
      1. **Zlepšená prístupnosť**: Čítačky obrazovky ľahšie rozumejú štruktúre obsahu a používatelia so zrakovým postihnutím sa v ňom lepšie orientujú.
      2. **SEO výhody**: Vyhľadávače dokážu lepšie pochopiť, o čom stránka je a lepšie ju zaradiť.
      3. **Lepšia udržiavateľnosť kódu**: Kód je prehľadnejší, a tak sa jednoduchšie rozvíja a upravuje.
      4. **Štandardy a budúca rozšíriteľnosť**: Použitie moderných značiek zvyšuje šancu, že kód bude kompatibilný aj s budúcimi technológiami.
 
-2. ROZDIELY MEDZI INLINE, INTERNAL A EXTERNAL CSS
+3. ROZDIELY MEDZI INLINE, INTERNAL A EXTERNAL CSS
 
    - **Inline CSS**:
      - Deklarácie štýlov sú priamo v HTML elemente pomocou atribútu style.
@@ -51,7 +58,7 @@
      3. **Jednoduchá údržba**: Zmena v jednom CSS súbore sa prejaví na všetkých stránkach.
      4. **Rýchlosť načítania**: Prehliadač si štýlový súbor môže stiahnuť a uložiť do vyrovnávacej pamäte (cache).
 
-3. ČO SÚ MEDIA QUERIES A AKO ZABEZPEČIŤ RESPONSIVITU
+4. ČO SÚ MEDIA QUERIES A AKO ZABEZPEČIŤ RESPONSIVITU
 
    **Media queries** v CSS umožňujú aplikovať rôzne štýly v závislosti od vlastností zariadenia (napr. šírka obrazovky). Používajú sa pre responzívny dizajn, aby stránka vyzerala dobre na mobiloch, tabletoch, notebookoch či veľkých monitoroch.
 
@@ -79,7 +86,7 @@
      2. Potom pomocou media queries upravujeme rozloženie pre rôzne šírky obrazovky (breakpointy).
      3. Zabezpečíme, aby dôležité prvky boli čitateľné a použiteľné na všetkých zariadeniach.
 
-4. ROZDIEL MEDZI document.querySelector() A document.querySelectorAll()
+5. ROZDIEL MEDZI document.querySelector() A document.querySelectorAll()
 
    - **document.querySelector(selektor)**:
      - Vráti prvý element v dokumente, ktorý zodpovedá zadanému CSS selektoru.
@@ -95,7 +102,7 @@
      1. querySelector() – ak manipuluješ len s jedným (prvým nájdeným) prvkom.
      2. querySelectorAll() – ak potrebuješ získať a upraviť viac prvkov naraz (napr. pridanie triedy všetkým prvkom).
 
-5. HLAVNÉ VÝHODY REACTU A ZÁKLADNÝ PRÍKLAD KOMPONENTU
+6. HLAVNÉ VÝHODY REACTU A ZÁKLADNÝ PRÍKLAD KOMPONENTU
 
    - **Hlavné výhody použitia Reactu**:
      1. **Komponentovo orientovaná architektúra**: Aplikácia je rozdelená na menšie, znovupoužiteľné časti (komponenty).
