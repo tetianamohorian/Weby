@@ -106,10 +106,12 @@
      - Vráti element, ktorý má jedinečný atribút id (napr. document.getElementById("header")).
      - Vracia vždy iba jeden prvok (lebo hodnota id by mala byť jedinečná v rámci celej stránky).
      - Funguje rýchlejšie ako querySelector(), keďže prehliadač hľadá priamo konkrétne id (nie cez selektor).
+       
 
    - **Kedy použiť každý**:
      1. querySelector() – ak manipuluješ len s jedným (prvým nájdeným) prvkom.
      2. querySelectorAll() – ak potrebuješ získať a upraviť viac prvkov naraz (napr. pridanie triedy všetkým prvkom).
+     3. getElementById() – ak je na stránke element s jedinečným ID a potrebujete ho rýchlo získať.
 
 6. HLAVNÉ VÝHODY REACTU A ZÁKLADNÝ PRÍKLAD KOMPONENTU
 
