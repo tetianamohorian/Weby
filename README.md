@@ -28,7 +28,7 @@
 
    - **Inline CSS**:
      - Deklarácie štýlov sú priamo v HTML elemente pomocou atribútu style.
-     - Napr.: <p style="color: red; font-size: 16px;">Text</p>
+     - Napr.: ```html <p style="color: red; font-size: 16px;">Text</p>```
      - Výhodou je, že štýl sa uplatní iba na konkrétny prvok. Nevýhodou je neprehľadnosť a horšia udržiavateľnosť kódu.
 
    - **Internal (vložené) CSS**:
