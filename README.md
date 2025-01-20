@@ -3,13 +3,13 @@
    Semantické HTML je spôsob písania HTML kódu, pri ktorom používame také značky (tagy), ktoré opisujú význam obsahu (napr. ```html <header>, <nav>, <main>, <article>, <section>, <footer>``` a pod.). Tieto značky pomáhajú prehľadnosti kódu, lepšej prístupnosti pre čítačky obrazovky a efektívnejšiemu indexovaniu stránok vyhľadávačmi.
 
    - Príklady semantických značiek:
-     - <header> – hlavička sekcie alebo celej stránky
-     - <nav> – navigačné menu
-     - <main> – hlavný obsah stránky
-     - <section> – logická sekcia obsahu
-     - <article> – nezávislá časť obsahu (napr. článok na blogu)
-     - <aside> – vedľajší obsah, napríklad sidebar
-     - <footer> – pätička sekcie alebo celej stránky
+     <header> – hlavička sekcie alebo celej stránky
+     <nav> – navigačné menu
+     <main> – hlavný obsah stránky
+     <section> – logická sekcia obsahu
+     <article> – nezávislá časť obsahu (napr. článok na blogu)
+     <aside> – vedľajší obsah, napríklad sidebar
+     <footer> – pätička sekcie alebo celej stránky
 
    - Prečo je dôležité semantické HTML:
      1. **Zlepšená prístupnosť**: Čítačky obrazovky ľahšie rozumejú štruktúre obsahu a používatelia so zrakovým postihnutím sa v ňom lepšie orientujú.
