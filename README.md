@@ -157,3 +157,126 @@
 ###Variant A
 
 
+# Webové technológie – Odpovede na otázky (Skupina A)
+
+## 1. Vysvetlite význam DOM a popíšte základné spôsoby tvorby responzívnej HTML5 stránky.
+
+### DOM (Document Object Model):
+DOM je rozhranie pre prácu s HTML a XML dokumentmi, ktoré predstavuje stromovú štruktúra, kde každý uzol reprezentuje prvok, atribút alebo text. DOM umožňuje dynamické manipulovanie so stránkou, ako napr.:
+- Pridávanie, odstraňovanie a upravovanie elementov.
+- Zmeny štýlov (CSS).
+- Reakcie na udalosti (napr. kliknutie).
+
+### Základné spôsoby tvorby responzívnej HTML5 stránky:
+1. **Použitie meta tagu** v hlavičke:
+   ```html
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   ```
+2. **Použitie flexbox a grid layoutov** na usporiadanie obsahu.
+3. **Media queries** pre prispôsobenie štýlov podľa zariadenia:
+   ```css
+   @media (max-width: 768px) {
+       body {
+           font-size: 14px;
+       }
+   }
+   ```
+4. **Optimalizácia zdrojov** (obrazky s atribútom srcset alebo použitie formátov ako WebP).
+5. **Používanie responzívnych rámcov**, napr. Bootstrap.
+
+---
+
+## 2. Popíšte základný syntax CSS. Definujte na jednoduchom príklade, čo je selektor, vlastnosti a hodnota CSS elementu.
+
+### Základný syntax CSS:
+CSS pravidlo sa skladá z:
+- **Selektora**, ktorý určuje, na ktoré elementy sa pravidlo aplikuje.
+- **Deklarácie**, ktorá obsahuje vlastnosť a hodnotu.
+
+#### Príklad:
+```css
+p {
+    color: blue; /* Vlastnosť: farba textu, Hodnota: modrá */
+    font-size: 16px; /* Vlastnosť: veľkosť písma, Hodnota: 16 pixelov */
+}
+```
+- **Selektor:** `p` (odkazuje na odsek `<p>`).
+- **Vlastnosti:** `color`, `font-size`.
+- **Hodnoty:** `blue`, `16px`.
+
+---
+
+## 3. Vymenujte základné väzby medzi jednotlivými komponentami modelu MVC (Model-View-Controller).
+
+### Model:
+- Obsahuje logiku aplikácie a pracuje s dátami (napr. databázovými záznamami).
+- Poskytuje dáta na zobrazenie vo View.
+
+### View:
+- Zodpovedá za vizuálne zobrazenie dát užívateľovi.
+- Prijíma dáta z Modelu a zobrazuje ich vo vhodnej forme.
+
+### Controller:
+- Riadí interakcie medzi Modelom a View.
+- Spracováva vstupy užívateľa a aktualizuje Model alebo View podľa potreby.
+
+### Väzby:
+- **Model ↔ Controller:** Controller mení stav Modelu a číta jeho dáta.
+- **Controller ↔ View:** Controller odovzdáva dáta View-u na zobrazenie.
+- **Model ↔ View:** View dostáva dáta priamo z Modelu.
+
+---
+
+## 4. Aké sú kľúcové princípy JavaScriptu a ako umožňujú vytvárať dynamické webové stránky?
+
+### Kľúcové princípy JavaScriptu:
+1. **Interaktivita:** Umožňuje reagovať na akcie užívateľa (kliknutia, zadanie textu).
+2. **Manipulácia s DOM:** Dynamické pridávanie, odstraňovanie alebo zmeny elementov.
+3. **Asynchrónny chod:** Vďaka funkciám ako `setTimeout`, `fetch` a `async/await` umožňuje paralelné vykonávanie úloh.
+4. **Podpora udalostí:** Možnosť nastaviť "event listener" na prvky stránky:
+   ```javascript
+   document.getElementById('button').addEventListener('click', function() {
+       alert('Klikli ste na tlačidlo!');
+   });
+   ```
+
+### Dynamické webové stránky:
+- **Príklad:** Formulár, ktorý validuje vstup užívateľa pred odoslaním.
+- **Funkcia:** Automatická aktualizácia obsahu (napr. chatovacie aplikácie, vyhľadávanie v reálnom čase).
+
+---
+
+## 5. Aké základné časti obsahuje React projekt a ako sú spojené súbory úsrredného /public/index.html?
+
+### Základné časti React projektu:
+1. **Komponenty:**
+   - Samostatné časti aplikácie definované pomocou tried alebo funkcií.
+   - Príklad:
+     ```javascript
+     function App() {
+         return <h1>Vitajte v Reacte!</h1>;
+     }
+     ```
+2. **JSX (JavaScript XML):**
+   - Syntax pre kombinovanie HTML a JavaScriptu.
+3. **State a Props:**
+   - State: Lokálne uložené dáta komponentu.
+   - Props: Dáta odovzdávané medzi komponentmi.
+4. **Routing:**
+   - Spravuje navigáciu medzi rôznymi častami aplikácie (napr. React Router).
+
+### Spojenie s /public/index.html:
+- Všetky React komponenty sa renderujú do **jediného elementu** v `index.html`:
+  ```html
+  <div id="root"></div>
+  ```
+- React aplikácia používa tento element ako „kořeň“ pre vykreslenie aplikácie.
+- Príklad renderovania:
+  ```javascript
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import App from './App';
+
+  ReactDOM.render(<App />, document.getElementById('root'));
+  ```
+
